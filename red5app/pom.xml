@@ -36,32 +36,23 @@
           <maxmem>1024m</maxmem>
         </configuration>
       </plugin>
-	  <plugin>
-		  <groupId>org.apache.maven.plugins</groupId>
-		  <artifactId>maven-dependency-plugin</artifactId>
-		  <executions>
-			<execution>
-				<id>copy-flex-resources</id>
-				<phase>compile</phase>
-				<goals>
-					<goal>copy</goal>
-				</goals>
-				<configuration>
-					<artifactItems>
-						<artifactItem>
-							<groupId>net.arulraj.demo</groupId>
-							<artifactId>flexapp</artifactId>
-							<version>${project.version}</version>
-							<type>swf</type>
-							<overWrite>true</overWrite>
-							<outputDirectory>${basedir}/src/main/webapp</outputDirectory>
-							<destFileName>main.swf</destFileName>
-						</artifactItem>
-					</artifactItems>
-				</configuration>
-			</execution>
-		</executions>
-	</plugin>	  
+      <plugin>
+        <groupId>org.sonatype.flexmojos</groupId>
+        <artifactId>flexmojos-maven-plugin</artifactId>
+        <version>${flexmojos.version}</version>
+        <executions>
+           <execution>
+              <goals>
+                 <goal>copy-flex-resources</goal>
+              </goals>
+           </execution>
+        </executions>
+        <configuration>
+          <stripVersion>true</stripVersion>
+          <copyRSL>true</copyRSL>
+          <useFinalName>true</useFinalName>
+        </configuration>
+      </plugin>
     </plugins>
   </build>
   
@@ -349,15 +340,28 @@
       <version>2.5.0</version>
     </dependency>
 	
-	<!-- END: red5 dependencies -->
+    <!-- END: red5 dependencies -->
 	
-	<!-- External dependencies -->	
-	
+    <!-- Java External dependencies -->
+    <dependency>
+      <groupId>org.red5</groupId>
+      <artifactId>red5-server</artifactId>
+      <version>${red5.version}</version>
+    </dependency>
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
       <version>3.8.1</version>
       <scope>test</scope>
     </dependency>
+
+    <!-- Flex dependencies -->
+    <dependency>
+      <groupId>net.arulraj.demo</groupId>
+      <artifactId>flexapp</artifactId>
+      <version>${project.version}</version>
+      <type>swf</type>
+    </dependency>
+
   </dependencies>
 </project>

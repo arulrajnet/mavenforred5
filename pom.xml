@@ -23,8 +23,8 @@
   </developers>
 
   <modules>
-	<module>/flexapp</module>
-    <module>/red5app</module>    
+    <module>/flexapp</module>
+    <module>/red5app</module>
   </modules>  
   
   <properties>

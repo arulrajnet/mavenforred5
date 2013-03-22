@@ -9,14 +9,14 @@
   <url>http://maven.apache.org</url>
   
   <parent>
-	<groupId>net.arulraj.demo</groupId>
-	<artifactId>all</artifactId>
-	<version>1.0-SNAPSHOT</version>
+    <groupId>net.arulraj.demo</groupId>
+    <artifactId>all</artifactId>
+    <version>1.0-SNAPSHOT</version>
     <relativePath>../</relativePath>
   </parent>
 
   <build>
-	<finalName>main</finalName>
+  <finalName>main</finalName>
 	<sourceDirectory>src/main/flex</sourceDirectory>
 	<testSourceDirectory>src/test/flex</testSourceDirectory>
     <plugins>
