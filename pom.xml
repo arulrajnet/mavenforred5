@@ -5,7 +5,7 @@
   <packaging>pom</packaging>
   <name>mavenforred5</name>
   <description>Maven for red5</description>
-  <groupId>net.arulraj</groupId>
+  <groupId>net.arulraj.demo</groupId>
   <version>1.0</version>
   
   <developers>
@@ -23,9 +23,9 @@
   </developers>
 
   <modules>
-    <module>/flexapp</module>
-    <module>/red5app</module>
-  </modules>  
+    <module>flexapp</module>
+    <module>red5app</module>
+  </modules>
   
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -36,7 +36,7 @@
     <mina.version>2.0.7</mina.version>
     <logback.version>1.0.6</logback.version>
     <!-- Flex properties -->
-    <flex.sdk.version>4.5.1.21328</flex.sdk.version>
+    <flex.sdk.version>4.1.0.16076</flex.sdk.version>
     <flexmojos.version>3.6.1</flexmojos.version>
     <cairngorm.version>2.2.1</cairngorm.version>
     <flexunit.version>4.0-rc-1</flexunit.version>

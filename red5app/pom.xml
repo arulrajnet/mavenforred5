@@ -13,9 +13,9 @@
   
   <parent>
 	<groupId>net.arulraj.demo</groupId>
-	<artifactId>all</artifactId>
-	<version>1.0-SNAPSHOT</version>
-    <relativePath>../</relativePath>
+	<artifactId>mavenforred5</artifactId>
+	<version>1.0</version>
+    <relativePath>../pom.xml</relativePath>
   </parent>  
   
   <build>
