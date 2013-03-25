@@ -1,24 +1,24 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>net.arulraj.demo</groupId>
   <artifactId>flexapp</artifactId>
   <packaging>swf</packaging>
-  <version>1.0-SNAPSHOT</version>
+  <version>${project.build.version}</version>
   <name>flexapp</name>
   <url>http://maven.apache.org</url>
-  
+
   <parent>
     <groupId>net.arulraj.demo</groupId>
     <artifactId>mavenforred5</artifactId>
-    <version>1.0</version>
+    <version>${project.build.version}</version>
     <relativePath>../pom.xml</relativePath>
   </parent>
 
   <build>
-  <finalName>main</finalName>
-	<sourceDirectory>src/main/flex</sourceDirectory>
-	<testSourceDirectory>src/test/flex</testSourceDirectory>
+    <finalName>main</finalName>
+    <sourceDirectory>src/main/flex</sourceDirectory>
+    <testSourceDirectory>src/test/flex</testSourceDirectory>
     <plugins>
       <plugin>
         <groupId>org.sonatype.flexmojos</groupId>
@@ -37,7 +37,36 @@
             <type>pom</type>
           </dependency>
         </dependencies>
-      </plugin>	  
+        <executions>
+          <execution>
+            <id>wrapper</id>
+            <phase>generate-resources</phase>
+            <goals>
+              <goal>wrapper</goal>
+            </goals>
+            <configuration>
+              <templateURI>folder:/src/main/resources/templates/swfobject</templateURI>
+              <outputDirectory>${project.flex.htmlWrapperPath}</outputDirectory>
+              <wrapperArtifact>
+                <groupId>${project.groupId}</groupId>
+                <artifactId>${project.artifactId}</artifactId>
+                <version>${project.version}</version>
+              </wrapperArtifact>
+              <htmlName>index</htmlName>
+              <parameters>
+                <expressInstallSwf>playerProductInstall.swf</expressInstallSwf>
+                <red5Server>localhost</red5Server>
+                <red5Secure>false</red5Secure>
+                <copyright.year>2013</copyright.year>
+                <copyright.client>arulraj.net</copyright.client>
+                <build.type>Developement</build.type>
+                <project.name>${project.parent.artifactId}</project.name>
+                <project.version>${project.build.version}</project.version>
+              </parameters>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
     </plugins>
     <defaultGoal>install</defaultGoal>
   </build>
@@ -60,6 +89,6 @@
       <version>${flexunit.version}</version>
       <type>swc</type>
       <scope>test</scope>
-    </dependency>  
+    </dependency>
   </dependencies>
 </project>
