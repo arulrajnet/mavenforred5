@@ -1,6 +1,6 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <!-- refer from http://red5.googlecode.com/svn/repository/org/red5/red5-server/1.0/red5-server-1.0.pom -->
+  <!-- refer from http://red5.googlecode.com/svn/repository/org/red5/red5-server/1.0-java6/red5-server-1.0-java6.pom -->
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>net.arulraj.demo</groupId>

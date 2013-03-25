@@ -4,6 +4,5 @@
 /red5app/target
 /dist
 /bin
-*.swf
 *.class
 *.log
