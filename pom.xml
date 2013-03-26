@@ -6,7 +6,7 @@
   <name>mavenforred5</name>
   <description>Maven for red5</description>
   <groupId>net.arulraj.demo</groupId>
-  <version>${project.build.version}</version>
+  <version>0.0.1</version>
   
   <developers>
     <developer>
@@ -29,8 +29,8 @@
   
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <project.build.version>0.0.1</project.build.version>
     <project.flex.htmlWrapperPath>${project.parent.basedir}/red5app/src/main/webapp/html/</project.flex.htmlWrapperPath>
+	<jdk.version>1.6</jdk.version>
     <!-- red5 properties -->
     <red5.version>1.0</red5.version>	
     <spring.version>3.1.1.RELEASE</spring.version>

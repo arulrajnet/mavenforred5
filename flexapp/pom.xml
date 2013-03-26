@@ -4,14 +4,14 @@
   <groupId>net.arulraj.demo</groupId>
   <artifactId>flexapp</artifactId>
   <packaging>swf</packaging>
-  <version>${project.build.version}</version>
+  <version>0.0.1</version>
   <name>flexapp</name>
   <url>http://maven.apache.org</url>
 
   <parent>
     <groupId>net.arulraj.demo</groupId>
     <artifactId>mavenforred5</artifactId>
-    <version>${project.build.version}</version>
+    <version>0.0.1</version>
     <relativePath>../pom.xml</relativePath>
   </parent>
 
@@ -61,7 +61,7 @@
                 <copyright.client>arulraj.net</copyright.client>
                 <build.type>Developement</build.type>
                 <project.name>${project.parent.artifactId}</project.name>
-                <project.version>${project.build.version}</project.version>
+                <project.version>${project.version}</project.version>
               </parameters>
             </configuration>
           </execution>

@@ -5,7 +5,7 @@
 
   <groupId>net.arulraj.demo</groupId>
   <artifactId>red5app</artifactId>
-  <version>${project.build.version}</version>
+  <version>0.0.1</version>
   <packaging>war</packaging>
 
   <name>red5app</name>
@@ -14,7 +14,7 @@
   <parent>
     <groupId>net.arulraj.demo</groupId>
     <artifactId>mavenforred5</artifactId>
-    <version>${project.build.version}</version>
+    <version>0.0.1</version>
     <relativePath>../pom.xml</relativePath>
   </parent>
 
