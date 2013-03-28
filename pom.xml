@@ -38,8 +38,8 @@
     <mina.version>2.0.7</mina.version>
     <logback.version>1.0.6</logback.version>
     <!-- Flex properties -->
-    <flex.sdk.version>4.1.0.16076</flex.sdk.version>
-    <flexmojos.version>3.6.1</flexmojos.version>
+    <flex.sdk.version>4.6.b.23201</flex.sdk.version>
+    <flexmojos.version>3.8</flexmojos.version>
     <cairngorm.version>2.2.1</cairngorm.version>
     <flexunit.version>4.0-rc-1</flexunit.version>
     <flashplayer.version.major>10</flashplayer.version.major>

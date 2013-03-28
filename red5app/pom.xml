@@ -76,18 +76,21 @@
       <groupId>org.slf4j</groupId>
       <artifactId>slf4j-api</artifactId>
       <version>${slf4j.version}</version>
+      <scope>provided</scope>
     </dependency>
 
     <dependency>
       <groupId>ch.qos.logback</groupId>
       <artifactId>logback-core</artifactId>
       <version>${logback.version}</version>
+      <scope>provided</scope>
     </dependency>
 
     <dependency>
       <groupId>ch.qos.logback</groupId>
       <artifactId>logback-classic</artifactId>
       <version>${logback.version}</version>
+      <scope>provided</scope>
     </dependency>
 
     <dependency>
@@ -100,12 +103,14 @@
           <artifactId>commons-logging</artifactId>
         </exclusion>
       </exclusions>
+      <scope>provided</scope>
     </dependency>
 
     <dependency>
       <groupId>org.apache.mina</groupId>
       <artifactId>mina-core</artifactId>
       <version>${mina.version}</version>
+      <scope>provided</scope>
     </dependency>
     <dependency>
       <groupId>org.apache.mina</groupId>
@@ -117,17 +122,20 @@
           <artifactId>mina-integration-ognl</artifactId>
         </exclusion>
       </exclusions>
+      <scope>provided</scope>
     </dependency>
     <dependency>
       <groupId>org.apache.mina</groupId>
       <artifactId>mina-integration-beans</artifactId>
       <version>${mina.version}</version>
+      <scope>provided</scope>
     </dependency>
     <dependency>
       <groupId>org.apache.mina</groupId>
       <artifactId>mina-core</artifactId>
       <version>${mina.version}</version>
       <type>jar</type>
+      <scope>provided</scope>
     </dependency>
     <dependency>
       <groupId>org.apache.mina</groupId>
@@ -140,6 +148,7 @@
           <artifactId>mina-core</artifactId>
         </exclusion>
       </exclusions>
+      <scope>provided</scope>
     </dependency>
     <dependency>
       <groupId>org.apache.mina</groupId>
@@ -156,6 +165,7 @@
           <artifactId>mina-integration-beans</artifactId>
         </exclusion>
       </exclusions>
+      <scope>provided</scope>
     </dependency>
     <dependency>
       <groupId>org.apache.mina</groupId>
@@ -176,6 +186,7 @@
           <artifactId>mina-integration-ognl</artifactId>
         </exclusion>
       </exclusions>
+      <scope>provided</scope>
     </dependency>
 
     <dependency>
@@ -189,12 +200,14 @@
       <groupId>javax.activation</groupId>
       <artifactId>activation</artifactId>
       <version>1.1</version>
+      <scope>provided</scope>
     </dependency>
 
     <dependency>
       <groupId>org.bouncycastle</groupId>
       <artifactId>bcprov-jdk15on</artifactId>
       <version>1.47</version>
+      <scope>provided</scope>
     </dependency>
 
     <dependency>
@@ -207,84 +220,98 @@
           <artifactId>commons-logging</artifactId>
         </exclusion>
       </exclusions>
+      <scope>provided</scope>
     </dependency>
 
     <dependency>
       <groupId>commons-codec</groupId>
       <artifactId>commons-codec</artifactId>
       <version>1.6</version>
+      <scope>provided</scope>
     </dependency>
 
     <dependency>
       <groupId>commons-collections</groupId>
       <artifactId>commons-collections</artifactId>
       <version>3.2.1</version>
+      <scope>provided</scope>
     </dependency>
 
     <dependency>
       <groupId>org.apache.httpcomponents</groupId>
       <artifactId>httpcore</artifactId>
       <version>4.2.1</version>
+      <scope>provided</scope>
     </dependency>
 
     <dependency>
       <groupId>org.apache.httpcomponents</groupId>
       <artifactId>httpclient</artifactId>
       <version>4.2.1</version>
+      <scope>provided</scope>
     </dependency>
 
     <dependency>
       <groupId>org.apache.commons</groupId>
       <artifactId>commons-lang3</artifactId>
       <version>3.1</version>
+      <scope>provided</scope>
     </dependency>
 
     <dependency>
       <groupId>commons-pool</groupId>
       <artifactId>commons-pool</artifactId>
       <version>1.5.6</version>
+      <scope>provided</scope>
     </dependency>
 
     <dependency>
       <groupId>javax.persistence</groupId>
       <artifactId>persistence-api</artifactId>
       <version>1.0</version>
+      <scope>provided</scope>
     </dependency>
 
     <dependency>
       <groupId>org</groupId>
       <artifactId>jaudiotagger</artifactId>
       <version>2.0.4-SNAPSHOT</version>
+      <scope>provided</scope>
     </dependency>
 
     <dependency>
       <groupId>org.slf4j</groupId>
       <artifactId>jcl-over-slf4j</artifactId>
       <version>${slf4j.version}</version>
+      <scope>provided</scope>
     </dependency>
 
     <dependency>
       <groupId>javax.transaction</groupId>
       <artifactId>jta</artifactId>
       <version>1.1</version>
+      <scope>provided</scope>
     </dependency>
 
     <dependency>
       <groupId>org.slf4j</groupId>
       <artifactId>jul-to-slf4j</artifactId>
       <version>${slf4j.version}</version>
+      <scope>provided</scope>
     </dependency>
 
     <dependency>
       <groupId>org.slf4j</groupId>
       <artifactId>log4j-over-slf4j</artifactId>
       <version>${slf4j.version}</version>
+      <scope>provided</scope>
     </dependency>
 
     <dependency>
       <groupId>org.quartz-scheduler</groupId>
       <artifactId>quartz</artifactId>
       <version>1.8.6</version>
+      <scope>provided</scope>
     </dependency>
 
     <dependency>
@@ -297,6 +324,7 @@
           <artifactId>commons-logging</artifactId>
         </exclusion>
       </exclusions>
+      <scope>provided</scope>
     </dependency>
 
     <dependency>
@@ -309,6 +337,7 @@
           <artifactId>commons-logging</artifactId>
         </exclusion>
       </exclusions>
+      <scope>provided</scope>
     </dependency>
 
     <dependency>
@@ -321,24 +350,28 @@
           <artifactId>commons-logging</artifactId>
         </exclusion>
       </exclusions>
+      <scope>provided</scope>
     </dependency>
 
     <dependency>
       <groupId>xerces</groupId>
       <artifactId>xercesImpl</artifactId>
       <version>2.9.1</version>
+      <scope>provided</scope>
     </dependency>
 
     <dependency>
       <groupId>xmlrpc</groupId>
       <artifactId>xmlrpc</artifactId>
       <version>2.0.1</version>
+      <scope>provided</scope>
     </dependency>
 
     <dependency>
       <groupId>net.sf.ehcache</groupId>
       <artifactId>ehcache-core</artifactId>
       <version>2.5.0</version>
+      <scope>provided</scope>
     </dependency>
 
     <!-- END: red5 dependencies -->
@@ -348,7 +381,9 @@
       <groupId>org.red5</groupId>
       <artifactId>red5-server</artifactId>
       <version>${red5.version}</version>
+      <scope>provided</scope>
     </dependency>
+
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
